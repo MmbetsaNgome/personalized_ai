@@ -14,7 +14,7 @@
       },
       "source": [
         "src/personalized_ai_frontend/src/assets",
-        "dist/personalized_ai_frontend/"
+        "src/personalized_ai_frontend/src/personalized_ai_frontend/"
       ],
       "type": "assets",
       "gzip": true

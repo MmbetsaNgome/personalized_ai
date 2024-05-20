@@ -2,7 +2,7 @@ import { AuthClient } from "@dfinity/auth-client";
 import { createConversation } from "./chat";
 
 const MAX_TTL = BigInt(7 * 24 * 60 * 60 * 1000 * 1000 * 1000);
-const IDENTITY_PROVIDER = `https://identity.raw.ic0.app/`;
+const IDENTITY_PROVIDER = `http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/`;
 
 export async function getAuthClient() {
   return await AuthClient.create();

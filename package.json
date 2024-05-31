@@ -9,7 +9,7 @@
         "Canister"
     ],
     "scripts": {
-        "build": "cd src/personalized_ai_frontend && VITE_CANISTER_ORIGIN=http://$(dfx canister id backend).localhost:8000 vite build",
+        "build": "webpack",
         "pretest": "ts-node --transpile-only --ignore=false --skip-project test/pretest.ts",
         "test": "ts-node --transpile-only --ignore=false --skip-project test/test.ts",
         "prebuild": "dfx generate",
@@ -20,8 +20,8 @@
         "gen-deploy:local": "dfx generate backend && dfx deploy --network=local"
     },
     "dependencies": {
-        "@dfinity/agent": "^1.3.0",
-        "@dfinity/auth-client": "^1.3.0",
+        "@dfinity/agent": "^0.19.2",
+        "@dfinity/auth-client": "^0.19.3",
         "@dfinity/candid": "^0.19.2",
         "@dfinity/ledger": "^0.0.15",
         "@dfinity/nns": "^0.16.7",
@@ -55,7 +55,6 @@
         "@babel/core": "^7.24.5",
         "@babel/preset-env": "^7.24.5",
         "@babel/preset-react": "^7.24.1",
-        "@dfinity/identity": "^1.3.0",
         "@rollup/plugin-node-resolve": "^15.2.3",
         "@types/cors": "^2.8.17",
         "assert": "2.0.0",
@@ -87,3 +86,4 @@
         "last 2 edge version"
     ]
 }
+
